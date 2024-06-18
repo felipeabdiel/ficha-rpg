@@ -20,4 +20,8 @@ class Personagem{
     getModificador(atributo){
         return Math.floor((this.getAtributo(atributo) - 10) / 2);
     }
+
+    
 }
+
+export default Personagem;

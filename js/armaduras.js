@@ -1,4 +1,4 @@
-class armaduras {
+class Armaduras {
     constructor(nome, peso, defesa, efeito) {
         this.nome = nome;
         this.peso = peso;
