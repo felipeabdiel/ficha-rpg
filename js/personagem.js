@@ -9,4 +9,15 @@ class Personagem{
         this.carisma = carisma;
     }
 
+    getNome(){
+        return this.nome;
+    }
+
+    getAtributo(atributo){
+        return this[atributo];
+    }
+
+    getModificador(atributo){
+        return Math.floor((this.getAtributo(atributo) - 10) / 2);
+    }
 }
