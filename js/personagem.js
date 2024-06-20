@@ -7,6 +7,7 @@ class Personagem{
         this.inteligencia = inteligencia;
         this.sabedoria = sabedoria;
         this.carisma = carisma;
+        this.itens = [];
     }
 
     getNome(){

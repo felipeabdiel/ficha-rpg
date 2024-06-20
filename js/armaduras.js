@@ -1,25 +1,13 @@
-class Armaduras {
-    constructor(nome, peso, defesa, efeito) {
-        this.nome = nome;
+class Armaduras extends Itens {
+    constructor(nome, peso, ca, efeito, descricao) {
+        super(nome, descricao, efeito);
         this.peso = peso;
         this.ca = ca;
-        this.efeito = efeito;
     }
 
-    getNome() {
-        return this.nome;
-    }
+    //CA é Classe de Armadura (Class Armor)
 
-    getPeso() {
-        return this.peso;
-    }
-
-    getCa() {
-        return this.ca;
-    }
-    
-    getEfeito() {
-        return this.efeito;
-    }
 }
+
+export default Armaduras;
 
