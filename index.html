@@ -17,28 +17,35 @@
             <input type="text" id="class" name="class" required>
 
             <label for="level">Nível:</label>
-            <input type="number" id="level" name="level" required>
+            <input type="number" id="level" name="level" min="1" value="1" required>
 
             <label for="strength">Força:</label>
             <input type="number" id="strength" name="strength" required>
+            <span id="modificador-forca"></span>
 
             <label for="dexterity">Destreza:</label>
             <input type="number" id="dexterity" name="dexterity" required>
+            <span id="modificador-destreza"></span>
 
             <label for="constitution">Constituição:</label>
             <input type="number" id="constitution" name="constitution" required>
+            <span id="modificador-constituicao"></span>
 
             <label for="intelligence">Inteligência:</label>
             <input type="number" id="intelligence" name="intelligence" required>
+            <span id="modificador-inteligencia"></span>
 
             <label for="wisdom">Sabedoria:</label>
             <input type="number" id="wisdom" name="wisdom" required>
+            <span id="modificador-sabedoria"></span>
 
             <label for="charisma">Carisma:</label>
             <input type="number" id="charisma" name="charisma" required>
+            <span id="modificador-carisma"></span>
 
             <button type="submit">Salvar Ficha</button>
         </form>
+        <div id="character-display"></div> <!-- Adicionando a div para exibir os dados do personagem -->
     </div>
     <script src="script.js"></script>
 </body>

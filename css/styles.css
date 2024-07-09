@@ -13,10 +13,13 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Adicionando um limite máximo de largura */
 }
 
 h1 {
     margin-bottom: 20px;
+    text-align: center; /* Centraliza o título */
 }
 
 form {
@@ -27,6 +30,7 @@ form {
 
 label {
     grid-column: 1 / span 2;
+    font-weight: bold; /* Torna os rótulos mais visíveis */
 }
 
 input {
@@ -34,6 +38,7 @@ input {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 16px; /* Aumenta o tamanho da fonte para melhorar a legibilidade */
 }
 
 button {
@@ -44,8 +49,28 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 16px; /* Aumenta o tamanho da fonte do botão */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave na cor do botão */
 }
 
 button:hover {
     background-color: #0056b3;
+}
+
+button:focus {
+    outline: none; /* Remove o contorno padrão de foco do botão */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Adiciona uma borda de foco suave */
+}
+
+span {
+    grid-column: 1 / span 2;
+    color: #666; /* Adiciona uma cor de texto mais clara para os modificadores */
+    font-size: 14px; /* Ajusta o tamanho da fonte para os modificadores */
+    margin-top: 5px; /* Adiciona um espaço acima dos modificadores */
+}
+
+@media (max-width: 600px) {
+    form {
+        grid-template-columns: 1fr; /* Altera o layout do formulário para uma coluna em telas menores */
+    }
 }
