@@ -1,4 +1,4 @@
-import Personagem from './personagem.js';
+import Personagem from './Personagem.js';
 
 class Paladino extends Personagem {
     constructor(nome, forca, destreza, constituicao, inteligencia, sabedoria, carisma) {
