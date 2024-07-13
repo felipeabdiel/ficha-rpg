@@ -10,7 +10,7 @@ body {
 
 .container {
     background-color: white;
-    padding: 20px;
+    padding: 40px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -28,6 +28,10 @@ form {
     gap: 10px;
 }
 
+form label {
+    display: block;
+}
+
 label {
     grid-column: 1 / span 2;
     font-weight: bold; /* Torna os rótulos mais visíveis */
@@ -35,7 +39,7 @@ label {
 
 input {
     grid-column: 1 / span 2;
-    padding: 8px;
+    padding: 4px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px; /* Aumenta o tamanho da fonte para melhorar a legibilidade */
@@ -63,10 +67,24 @@ button:focus {
 }
 
 span {
-    grid-column: 1 / span 2;
-    color: #666; /* Adiciona uma cor de texto mais clara para os modificadores */
-    font-size: 14px; /* Ajusta o tamanho da fonte para os modificadores */
-    margin-top: 5px; /* Adiciona um espaço acima dos modificadores */
+    font-size: 14px;
+    /* Adiciona um espaço acima dos modificadores */
+    width: 30px; 
+
+    height: 30px !important;
+    display: inline-block;
+
+    vertical-align: middle;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(204, 204, 204);
+}
+
+#character-display {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 @media (max-width: 600px) {

@@ -17,3 +17,4 @@ class ItensUtilitarios extends Itens {
 
 }
 
+export default ItensUtilitarios;
